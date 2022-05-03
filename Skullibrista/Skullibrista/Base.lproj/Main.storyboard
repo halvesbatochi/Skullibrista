@@ -15,11 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="peK-Tc-qZ2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="peK-Tc-qZ2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player0" translatesAutoresizingMaskIntoConstraints="NO" id="2oN-oI-2Mt">
-                                <rect key="frame" x="137" y="308" width="140" height="280"/>
+                                <rect key="frame" x="137" y="313" width="140" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2oN-oI-2Mt" secondAttribute="height" multiplier="1:2" id="M9z-7S-5t6"/>
                                     <constraint firstAttribute="width" constant="140" id="S1f-bf-yUd"/>
@@ -85,13 +86,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eCK-3z-0HS" secondAttribute="trailing" id="Fyc-vl-uf7"/>
                             <constraint firstAttribute="bottom" secondItem="03Q-VL-Szt" secondAttribute="bottom" id="HVA-R9-uy1"/>
                             <constraint firstItem="NvC-0V-4sP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NiZ-fj-s9y"/>
-                            <constraint firstItem="2oN-oI-2Mt" firstAttribute="centerY" secondItem="peK-Tc-qZ2" secondAttribute="centerY" id="VU8-VR-ZiY"/>
-                            <constraint firstAttribute="bottom" secondItem="peK-Tc-qZ2" secondAttribute="bottom" id="eHC-aO-CQq"/>
-                            <constraint firstItem="peK-Tc-qZ2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fOX-cO-x3T"/>
                             <constraint firstItem="03Q-VL-Szt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="idJ-rT-Sxj"/>
-                            <constraint firstItem="peK-Tc-qZ2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qL0-CZ-CJC"/>
-                            <constraint firstItem="peK-Tc-qZ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tD7-SI-ivg"/>
-                            <constraint firstItem="2oN-oI-2Mt" firstAttribute="centerX" secondItem="peK-Tc-qZ2" secondAttribute="centerX" id="zzi-Ng-mhe"/>
+                            <constraint firstItem="2oN-oI-2Mt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p8q-ra-Ode"/>
+                            <constraint firstItem="2oN-oI-2Mt" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xCb-32-Liq"/>
                         </constraints>
                     </view>
                     <connections>

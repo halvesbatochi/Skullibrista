@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Skullibrista" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="peK-Tc-qZ2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player0" translatesAutoresizingMaskIntoConstraints="NO" id="2oN-oI-2Mt">
+                                <rect key="frame" x="137" y="308" width="140" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2oN-oI-2Mt" secondAttribute="height" multiplier="1:2" id="M9z-7S-5t6"/>
+                                    <constraint firstAttribute="width" constant="140" id="S1f-bf-yUd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="eCK-3z-0HS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="91.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eCK-3z-0HS" secondAttribute="height" multiplier="1029:228" id="5ra-WE-C8J"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você precisa se equilibrar girando o celular. Se a caveira sair da área delimitada, é GAME OVER!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvC-0V-4sP">
+                                <rect key="frame" x="36" y="64" width="342" height="115"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03Q-VL-Szt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameOver" translatesAutoresizingMaskIntoConstraints="NO" id="Wfy-N6-fbl">
+                                        <rect key="frame" x="107" y="28" width="200" height="148.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="BCQ-q6-Cfr"/>
+                                            <constraint firstAttribute="width" secondItem="Wfy-N6-fbl" secondAttribute="height" multiplier="452:336" id="MSA-cf-wa1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdI-ve-swi">
+                                        <rect key="frame" x="50" y="576.5" width="314" height="43"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="playAgain"/>
+                                        <connections>
+                                            <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hwm-MU-qSM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você jogou durante X segundos." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAl-rL-UVO">
+                                        <rect key="frame" x="78.5" y="526" width="257.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bAl-rL-UVO" firstAttribute="centerX" secondItem="03Q-VL-Szt" secondAttribute="centerX" id="6eQ-xu-8Du"/>
+                                    <constraint firstItem="DdI-ve-swi" firstAttribute="centerX" secondItem="03Q-VL-Szt" secondAttribute="centerX" id="Hyw-uX-Y6g"/>
+                                    <constraint firstItem="Wfy-N6-fbl" firstAttribute="top" secondItem="03Q-VL-Szt" secondAttribute="top" constant="28" id="L9a-cz-QFl"/>
+                                    <constraint firstItem="Wfy-N6-fbl" firstAttribute="centerX" secondItem="03Q-VL-Szt" secondAttribute="centerX" id="Ri5-pw-niC"/>
+                                    <constraint firstItem="DdI-ve-swi" firstAttribute="top" secondItem="bAl-rL-UVO" secondAttribute="bottom" constant="30" id="Wx0-cR-KR0"/>
+                                    <constraint firstItem="DdI-ve-swi" firstAttribute="centerY" secondItem="03Q-VL-Szt" secondAttribute="centerY" constant="150" id="erJ-CL-QaF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NvC-0V-4sP" secondAttribute="trailing" constant="36" id="1LO-bY-WIX"/>
+                            <constraint firstItem="03Q-VL-Szt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Db-t5-idP"/>
+                            <constraint firstItem="eCK-3z-0HS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BZ4-ay-2PS"/>
+                            <constraint firstItem="eCK-3z-0HS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bah-X4-Qjt"/>
+                            <constraint firstItem="NvC-0V-4sP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Erx-GD-RKn"/>
+                            <constraint firstItem="03Q-VL-Szt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FnR-UE-GXn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eCK-3z-0HS" secondAttribute="trailing" id="Fyc-vl-uf7"/>
+                            <constraint firstAttribute="bottom" secondItem="03Q-VL-Szt" secondAttribute="bottom" id="HVA-R9-uy1"/>
+                            <constraint firstItem="NvC-0V-4sP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NiZ-fj-s9y"/>
+                            <constraint firstItem="2oN-oI-2Mt" firstAttribute="centerY" secondItem="peK-Tc-qZ2" secondAttribute="centerY" id="VU8-VR-ZiY"/>
+                            <constraint firstAttribute="bottom" secondItem="peK-Tc-qZ2" secondAttribute="bottom" id="eHC-aO-CQq"/>
+                            <constraint firstItem="peK-Tc-qZ2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fOX-cO-x3T"/>
+                            <constraint firstItem="03Q-VL-Szt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="idJ-rT-Sxj"/>
+                            <constraint firstItem="peK-Tc-qZ2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qL0-CZ-CJC"/>
+                            <constraint firstItem="peK-Tc-qZ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tD7-SI-ivg"/>
+                            <constraint firstItem="2oN-oI-2Mt" firstAttribute="centerX" secondItem="peK-Tc-qZ2" secondAttribute="centerX" id="zzi-Ng-mhe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbInstructions" destination="NvC-0V-4sP" id="Fx2-Gp-sJn"/>
+                        <outlet property="lbTimePlayed" destination="bAl-rL-UVO" id="tQD-BS-fQ1"/>
+                        <outlet property="player" destination="2oN-oI-2Mt" id="z5H-f2-GIw"/>
+                        <outlet property="street" destination="peK-Tc-qZ2" id="ebf-9Q-0ID"/>
+                        <outlet property="viGameOver" destination="03Q-VL-Szt" id="9Nb-mn-Si0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gameOver" width="226" height="168"/>
+        <image name="playAgain" width="290" height="29"/>
+        <image name="player0" width="588" height="1176"/>
+        <image name="street" width="1400" height="2800"/>
+        <image name="sun" width="1029" height="228"/>
+    </resources>
+</document>

@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         viGameOver.isHidden = true
         
         street.frame.size.width = view.frame.size.width * 2
-        street.frame.size.height = street.frame.size.width * 2
+        street.frame.size.height = view.frame.size.height * 2
         
         player.center = view.center
         player.animationImages = []
